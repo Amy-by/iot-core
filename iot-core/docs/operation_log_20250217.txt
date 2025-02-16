@@ -1,0 +1,76 @@
+Script started on 2025-02-17 05:16:24+08:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="88" LINES="45"]
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7m# 在Ubuntu虚拟机内执行[27m
+[7msudo apt update && sudo apt install git -y[27m[A# 在Ubuntu虚拟机内执行
+sudo apt update && sudo apt install git -y
+[?2004l[sudo] password for iotuser: 
+sudo: a password is required
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit config --global user.name "Amy-by"[27m
+[7mgit config --global user.email "c15219171265@163.com"[27m[Agit config --global user.name "Amy-by"
+git config --global user.email "c15219171265@163.com"
+[?2004l[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7m# 进入项目根目录（必须！）[27m
+[7mcd ~/projects[27m
+
+[7m# 初始化本地仓库[27m
+[7mgit init[27m
+
+[7m# 添加所有文件（ISTJ专用严格路径）[27m
+[7mgit add iot-core/ env-setup/ docs/  # 按你的实际目录结构添加[27m
+
+[7m# 提交代码（引号内可自定义描述）[27m
+[7mgit commit -m "ISTJ首次提交：物联网核心代码+环境配置"[27m
+
+[7m# 关联远程仓库（替换你的GitHub用户名）[27m
+[7mgit remote add origin https://github.com/你的GitHub用户名/iot-core.git[27m
+
+[7m# 强制推送代码（-u参数设置默认分支）[27m
+[7mgit push -u origin main[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ # 进入项目根目录（必须！）
+cd ~/projects
+
+# 初始化本地仓库
+git init
+
+# 添加所有文件（ISTJ专用严格路径）
+git add iot-core/ env-setup/ docs/  # 按你的实际目录结构添加
+
+# 提交代码（引号内可自定义描述）
+git commit -m "ISTJ首次提交：物联网核心代码+环境配置"
+
+# 关联远程仓库（替换你的GitHub用户名）
+git remote add origin https://github.com/你的GitHub用户名/iot-core.git
+
+# 强制推送代码（-u参数设置默认分支）
+git push -u origin main
+[?2004l[33mhint: Using 'master' as the name for the initial branch. This default branch name[m
+[33mhint: is subject to change. To configure the initial branch name to use in all[m
+[33mhint: of your new repositories, which will suppress this warning, call:[m
+[33mhint: [m
+[33mhint: 	git config --global init.defaultBranch <name>[m
+[33mhint: [m
+[33mhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and[m
+[33mhint: 'development'. The just-created branch can be renamed via this command:[m
+[33mhint: [m
+[33mhint: 	git branch -m <name>[m
+Initialized empty Git repository in /home/iotuser/projects/.git/
+fatal: pathspec 'docs/' did not match any files
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mREADME.txt[m
+	[31menv-setup/[m
+	[31minit_logs.sh[m
+	[31miot-core/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+error: src refspec main does not match any
+[31merror: failed to push some refs to 'https://github.com/你的GitHub用户名/iot-core.git'
+[m[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit init[27mgit init
+[?2004lReinitialized existing Git repository in /home/iotuser/projects/.git/
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit remote add origin https://github.com/Amy-by/i[27m[7mo[27m[7mt-core[27m[A]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ git remote add origin https://github.com/Amy-by/iot-core
+[?2004lerror: remote origin already exists.
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit add .[27m
+[7m# 如果只想添加特定文件，用 git add 文件名[27m[Agit add .
+# 如果只想添加特定文件，用 git add 文件名
+[?2004l
