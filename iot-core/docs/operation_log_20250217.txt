@@ -5250,4 +5250,48 @@ origin	https://github.com/你的GitHub用户名/iot-core.git (push)
 [?2004l[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit add .[27m
 [7m# 如果只想添加特定文件，用 git add 文件名[27m[Agit add .
 # 如果只想添加特定文件，用 git add 文件名
-[?2004l
+[?2004l[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit commit -m "第一次提交：环境配置，硬件模拟器（[27m[7m创[27m[7m建传感器模拟脚本、设置开机自启动），记录文件的创建"[27m[Agit commit -m "第一次提交：环境配置，硬件模拟器（创建传感器模拟脚本、设置开机自启动），记录文件的创建"
+[?2004l[master 5f6de86] 第一次提交：环境配置，硬件模拟器（创建传感器模拟脚本、设置开机自启动），记录文件的创建
+ 2 files changed, 5305 insertions(+)
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit push -u origin master[27mgit push -u origin master
+[?2004lUsername for 'https://github.com': Amy-by
+Password for 'https://Amy-by@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Amy-by/iot-core/'
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit push -u origin master[27mgit push -u origin master
+[?2004lUsername for 'https://github.com': Amy-by
+Password for 'https://Amy-by@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/Amy-by/iot-core/'
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit remote set-url origin git@github.com:Amy-by/i[27m[7mo[27m[7mt-core.git[27m[A]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ git remote set-url origin git@github.com:Amy-by/iot-core.git
+[?2004l[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit remote set-url origin git@github.com:Amy-by/i[27m[7mo[27m[7mt-core.git[27m[A]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ git remote set-url origin git@github.com:Amy-by/iot-core.git
+[?2004l[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit push -u origin master[27mgit push -u origin master
+[?2004lThe authenticity of host 'github.com (20.205.243.166)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit remote -v[27m
+[7m# 正确输出应包含：[27m
+[7m# origin  https://你的用户名:ghp_xxx@github.com/你的用户名/iot-core.git (fetch)[27m
+[7m# origin  https://你的用户名:ghp_xxx@github.com/你的用户名/iot-core.git (push)[27m[A[A[Agit remote -v
+# 正确输出应包含：
+# origin  https://你的用户名:ghp_xxx@github.com/你的用户名/iot-core.git (fetch)
+# origin  https://你的用户名:ghp_xxx@github.com/你的用户名/iot-core.git (push)
+[?2004lorigin	git@github.com:Amy-by/iot-core.git (fetch)
+origin	git@github.com:Amy-by/iot-core.git (push)
+[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [7mgit branch[27m
+[7m# 正确输出：[27m
+[7m# * main[27m[A[A]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ git branch
+# 正确输出：
+# * main
+[?2004l[?1h=* [32mmaster[m[m
+[K[?1l>[?2004h]0;iotuser@iotuser-VirtualBox: ~/projects[01;32miotuser@iotuser-VirtualBox[00m:[01;34m~/projects[00m$ [?2004l
+exit
