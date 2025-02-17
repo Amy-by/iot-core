@@ -1,1 +1,12 @@
-[2025-02-17] 初始环境创建
+# env_changelog.txt
+# 环境变更日志文件
+# 格式：日期 - 变更内容 - 变更人
+
+2025-02-16 - 彻底清理旧环境 - [iotuser]
+2025-02-16 - 下载锁定版本组件：VirtualBox 7.0.12 和 Ubuntu ISO 22.04.3 LTS (Jammy) 并安装 VirtualBox - [iotuser]
+2025-02-16 - 配置安装 Ubuntu 虚拟机 - [iotuser]
+2025-02-16 - 配置开发环境：安装基础依赖 - [iotuser]
+2025-02-16 - 配置开发环境：python3.10 --version  # 应显示 3.10.12 - [iotuser]
+2025-02-16 - 配置开发环境：pip --version         # 应显示 pip 23.0.1 - [iotuser]
+2025-02-16 - 配置开发环境：node --version        # 应显示 v12.22.9 - [iotuser]
+2025-02-16 - 配置硬件模拟器：创建传感器模拟脚本，设置开机自启动 - [iotuser]
